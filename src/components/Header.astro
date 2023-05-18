@@ -1,0 +1,25 @@
+---
+import Navigation from './Navigation.astro';
+import Logo from './Logo.astro';
+---
+<header>
+ <nav class="navBar">
+   <Logo />
+   <Navigation />
+ </nav>
+</header>
+
+<style>
+    header{
+        width: auto;
+        padding: 1em 0;
+    }
+
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        margin: none;
+    }
+</style>

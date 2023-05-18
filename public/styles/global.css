@@ -1,0 +1,9 @@
+html{
+    width: 85vw;
+    margin: auto;
+}
+
+html > * {
+    margin: none;
+    padding: none;
+}
