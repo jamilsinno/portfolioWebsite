@@ -4,10 +4,12 @@ import logo from '../../public/logo/logo.png';
 ---
 <header>
  <nav class="navBar">
-    <!-- <div class="logoContainer"> -->
+    <div class="navContainer">
         <img src={logo} alt="Sinno Technologies header logo">
-    <!-- </div> -->
-    <Navigation />
+    </div>
+    <div>
+        <Navigation />
+    </div>
  </nav>
 </header>
 
@@ -24,6 +26,10 @@ import logo from '../../public/logo/logo.png';
         align-items: center;
         width: auto;
         margin: none;
+    }
+
+    .navContainer{
+        width: 50%;
     }
 
     img{
