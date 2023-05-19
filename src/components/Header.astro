@@ -1,11 +1,15 @@
 ---
 import Navigation from './Navigation.astro';
-import Logo from './Logo.astro';
+import logo from '../../public/logo/logo.png';
 ---
 <header>
  <nav class="navBar">
-   <Logo />
-   <Navigation />
+    <div class="navContainer">
+        <img src={logo} alt="Sinno Technologies header logo">
+    </div>
+    <div>
+        <Navigation />
+    </div>
  </nav>
 </header>
 
@@ -19,7 +23,17 @@ import Logo from './Logo.astro';
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: auto;
         margin: none;
+    }
+
+    .navContainer{
+        width: 50%;
+    }
+
+    img{
+        transform: scale(0.4);
+        transform-origin: center left;
     }
 </style>
