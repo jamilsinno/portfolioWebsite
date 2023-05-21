@@ -30,11 +30,12 @@ import logo from '../../public/logo/logo.png';
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        padding-left: 1em;
     }
 
     img{
         transform: scale(0.4);
-        transform-origin: center;
+        transform-origin: center left;
     }
 
     @media screen and (max-width: 960px) {
@@ -46,9 +47,11 @@ import logo from '../../public/logo/logo.png';
 
         .navContainer{
             justify-content: center;
+            padding-left: 0;
         }
 
         img{
+            transform-origin: center;
             transform: scale(0.7);
         }
     }
