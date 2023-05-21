@@ -21,14 +21,35 @@ import logo from '../../public/logo/logo.png';
         align-items: center;
         width: auto;
         margin: none;
+        padding: 1em 0;
     }
 
     .navContainer{
         width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     img{
         transform: scale(0.4);
-        transform-origin: center left;
+        transform-origin: center;
+    }
+
+    @media screen and (max-width: 960px) {
+        .navBar{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navContainer{
+            justify-content: center;
+        }
+
+        img{
+            transform: scale(0.7);
+        }
     }
 </style>
