@@ -4,4 +4,7 @@
 }
 html{
     padding: 1em;
+    background-image: url('../images/backgroundLight.svg');
+    background-size: cover;
+    background-position: center;
 }
