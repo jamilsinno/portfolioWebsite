@@ -3,23 +3,49 @@ import image from "../../public/images/jamilSinnoBrush.svg";
 ---
 
 <div>
-    <img src={image} alt="Jamil Sinno's Hero image. The words are Jamil Sinno with a brush stroke in the back. The word Sinno is in between carats which is supposed to make it look like a component. The theme of the logo is an 8 bit design.">
+    <h1>
+        <img src={image} alt="Jamil Sinno's Hero image. The words are Jamil Sinno with a brush stroke in the back. The word Sinno is in between carats which is supposed to make it look like a component. The theme of the logo is an 8 bit design.">
+    </h1>
+    <section>
+        <h4>I enjoy writing code</h4>
+        <p>I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
+    </section>
 </div>
 
 <style>
     div{
         width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    @media screen and (max-width: 480px){
-        div{
-            transform: scale(0.5);
-        }
+    h1 img{
+        width: 100%;
+        max-height: 100%;
     }
 
-    @media (min-width: 481px) and (max-width: 980px){
-        div{
-            transform: scale(0.7);
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h4{
+        font-weight: bold;
+        padding: 0.5em 0;
+    }
+
+    p {
+        width: auto;
+        padding: 1em 0;
+    }
+
+    @media screen and (max-width: 980px){
+        p{
+            text-align: center;
         }
     }
 </style>
