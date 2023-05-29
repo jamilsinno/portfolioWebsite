@@ -7,12 +7,21 @@ import image from "../../public/images/jamilSinnoBrush.svg";
         <img src={image} alt="Jamil Sinno's Hero image. The words are Jamil Sinno with a brush stroke in the back. The word Sinno is in between carats which is supposed to make it look like a component. The theme of the logo is an 8 bit design.">
     </h1>
     <section>
-        <h4>I enjoy writing code</h4>
-        <p>I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
+        <h4>I enjoy <a href="https://github.com/jamilsinno">writing code</a>, <a href="https://1drv.ms/x/s!AkPXqkA8Qy8miULhLB_qMRzfvRFB?e=VdvnT5">lifting weights</a>, and <a href="https://linktr.ee/sinnotech">content creation</a>.</h4>
+        <p class="container">I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
     </section>
 </div>
 
 <style>
+	.container {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: rgba(255, 255, 255, 0.75);
+        padding: 1rem;
+		border-radius: 0.4rem;
+	}
+
     div{
         width: auto;
         display: flex;
@@ -34,23 +43,14 @@ import image from "../../public/images/jamilSinnoBrush.svg";
     }
 
     h4{
-        font-size: 3em;
+        font-size: 3rem;
         font-weight: bold;
         text-align: center;
         padding: 0.5em 0;
     }
 
     p {
-        font-size: 1.5em;
-        text-align: center;
-        font-weight: 500;
-        width: auto;
-        padding: 1em 0;
+        font-size: 1.5rem;
     }
 
-    @media screen and (max-width: 980px){
-        h4, p{
-            text-align: center;
-        }
-    }
 </style>
