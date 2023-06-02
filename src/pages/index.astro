@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import "../../public/styles/global.css";
+import image from "../../public/images/intro.jpg";
 ---
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
@@ -11,33 +11,7 @@ import "../../public/styles/global.css";
 	<main>
 		<Hero />
 		<div class="container">
-			<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-			<p class="instructions">
-				To get started, open the directory <code>src/pages</code> in your project.<br />
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<ul role="list" class="link-card-grid">
-				<Card
-					href="https://docs.astro.build/"
-					title="Documentation"
-					body="Learn how Astro works and explore the official API docs."
-				/>
-				<Card
-					href="https://astro.build/integrations/"
-					title="Integrations"
-					body="Supercharge your project with new frameworks and libraries."
-				/>
-				<Card
-					href="https://astro.build/themes/"
-					title="Themes"
-					body="Explore a galaxy of community-built starter themes."
-				/>
-				<Card
-					href="https://astro.build/chat/"
-					title="Community"
-					body="Come say hi to our amazing Discord community. ❤️"
-				/>
-			</ul>
+			<img src={image} alt="Jamil Sinno's personal photo">
 		</div>
 	</main>
 </Layout>
@@ -50,12 +24,17 @@ import "../../public/styles/global.css";
 		align-items: center;
 	}
 	.container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		padding: 1em;
 		min-width: 50%;
 	}
+
+	.container img{
+		width: 100%;
+		max-height: 100%;
+		border-radius: 2em;
+		box-shadow: 1em 1em 0.5em rgba(0, 0, 0, 0.5)
+	}
+
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
