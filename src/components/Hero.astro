@@ -8,7 +8,7 @@ import resume from "../../public/JamilSinnoresume.pdf";
         <img src={image} alt="Jamil Sinno's Hero image. The words are Jamil Sinno with a brush stroke in the back. The word Sinno is in between carats which is supposed to make it look like a component. The theme of the logo is an 8 bit design.">
     </h1>
     <section>
-        <h4>I enjoy <a href="https://github.com/jamilsinno">writing code</a>, <a href="https://1drv.ms/x/s!AkPXqkA8Qy8miULhLB_qMRzfvRFB?e=VdvnT5">lifting weights</a>, and <a href="https://linktr.ee/sinnotech">creating content</a>.</h4>
+        <h4>I enjoy <a class="link" href="https://github.com/jamilsinno">writing code</a>, <a class="link" href="https://1drv.ms/x/s!AkPXqkA8Qy8miULhLB_qMRzfvRFB?e=VdvnT5">lifting weights</a>, and <a class="link" href="https://linktr.ee/sinnotech">creating content</a>.</h4>
         <p class="container">I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
         <a id="resume" href={resume} target="_blank" rel="noopener noreferrer" download>My Resume</a>
     </section>
@@ -45,7 +45,6 @@ import resume from "../../public/JamilSinnoresume.pdf";
 	}
 
     #resume{
-        color: black;
 		background-color: rgba(255, 255, 255, 0.75);
         padding: 1em;
         font-size: 1.5em;
@@ -71,6 +70,10 @@ import resume from "../../public/JamilSinnoresume.pdf";
 
     p {
         font-size: 1.5rem;
+    }
+
+    .link{
+        color: #ba372f;
     }
 
 </style>
