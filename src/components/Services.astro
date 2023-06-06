@@ -1,0 +1,146 @@
+---
+import conversation from "../../public/icons/conversation.svg";
+import proposal from "../../public/icons/proposal.svg";
+import code from "../../public/icons/code.svg";
+import rocket from "../../public/icons/rocket.svg";
+---
+
+<div class="mainContainer">
+    <h1>Is Your Web Presence Working For You?</h1>
+    <div class="container">
+        <div class="textContainer">
+            <p class="mainText">Is your website designed to captivate potential customers seeking the services you offer? Does it seamlessly adapt to any device, ensuring a flawless user experience? In today's digital landscape, having a responsive and accessible website is no longer a luxury—it's a necessity.</p>
+            <p class="mainText">My mission is to deliver top-notch, responsive, and accessible websites to small businesses and individuals in our community. Whether you're in need of a brand-new website or a revamp to thrive in the mobile era, I'm here to assist you. I specialize in creating a virtual hub where interested parties can discover and engage with your unique offerings. How may I be of service to you today?</p>
+        </div>
+        <div class="features">
+            <article>
+                <img src={conversation} alt="a picture of two chat bubbles from either direction indicating a conversation.">
+                <div class="content">
+                    <h3>1. Consultation</h3>
+                    <p>It starts with a conversation where we'll determine what your project is about.</p>
+                </div>
+            </article>
+            <article>
+                <img src={proposal} alt="a picture of a pen and paper representing a proposal.">
+                <div class="content">
+                    <h3>2. Proposal</h3>
+                    <p>A detailed project proposal will be presented, followed by an action plan.</p>
+                </div>
+            </article>
+            <article>
+                <img src={code} alt="a picture of a left carrat, forward slash and a right carrat.">
+                <div class="content">
+                    <h3>3. Creation</h3>
+                    <p>Clients receive regular status updates as I work on and test the project.</p>
+                </div>
+            </article>
+            <article>
+                <img src={rocket} alt="a picture of a rocket.">
+                <div class="content">
+                    <h3>4. Launch</h3>
+                    <p>Your product comes to life with value added and peace of mind. </p>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+<style>
+    .container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .textContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        width: 50%;
+        height: auto:
+    }
+
+    .mainText{
+        font-size: 2.2rem;
+        text-align: justify;
+    }
+
+    .features{
+        width:50%;
+    }
+
+    .textContainer,
+    .features{
+        padding: 1em;
+    }
+
+    .content{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    h1{
+        font-size: 4em;
+        font-weight: bold;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    h3{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    p{
+		background-color: rgba(255, 255, 255, 0.75);
+        padding: 1em;
+        border: 1px solid rgba(186, 55, 47, 0.5); 
+        border-radius: 0.4em;
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+
+    article{
+        width: 100%;
+        max-height: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    img {
+        width:10%;
+        max-height: 100%;
+    }
+    
+	@media screen and (max-width: 1080px){
+		.mainContainer{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .textContainer,
+        .features{
+            width:100%;
+        }
+	}
+</style>
