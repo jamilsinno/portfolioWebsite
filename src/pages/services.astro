@@ -3,19 +3,21 @@ import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro";
 import "../../public/styles/global.css";
 import ServicesPage from "../components/Services.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
     <main>
         <ServicesPage />
+		<Projects />
     </main>
 </Layout>
 
 <style>
 	main {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
