@@ -4,8 +4,8 @@ import Card from "./Card.astro";
 ---
 
 <section class="container">
-    <h2>Projects</h2>
-    <section class="cardContainer">
+    <h3>Projects</h2>
+    <ul class="cardContainer">
         <Card 
             title={cardData[0].title} 
             body={cardData[0].body} 
@@ -30,7 +30,7 @@ import Card from "./Card.astro";
             repo={cardData[2].repo}
             alt={cardData[2].alt}
         />
-    </section>
+    </ul>
     <a href="https://github.com/jamilsinno?tab=repositories" target="_blank" rel="noreferrer noopener" class="github">View more of my projects on GitHub</a>
 </section>
 
@@ -40,13 +40,14 @@ import Card from "./Card.astro";
         flex-direction: column;
         justify-content: center;
     }
-    section{
+    section,
+    ul{
         width: 100%;
         height: auto;
         padding: 1rem;
     }
 
-    h2{
+    h3{
         font-size: 3.5rem;
         padding: 1rem;
         font-weight: bold;
