@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     color: #000;
+    line-height: 1.5;
 }
 html{
     background-image: url('../images/backgroundLight.svg');
@@ -12,11 +13,10 @@ html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1em 0;
 }
 
 body{
-    max-width: 85%;
+    width:100%;
 }
 
 li{
