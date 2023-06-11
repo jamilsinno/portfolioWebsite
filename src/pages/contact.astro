@@ -32,13 +32,19 @@ import "../../public/styles/global.css";
 
 <style>
     main{
-        padding: 1rem;
+        padding: 5rem;
+        display: flex;
+        width:100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
-    div{
+    .container{
 		border: 1px solid rgba(var(--accent), 25%);
 		background-color: rgba(255, 255, 255, 0.75);
 		padding: 1rem;
 		border-radius: 0.7rem;
+        width: 100%;
     }
 
     h1{
@@ -77,16 +83,26 @@ import "../../public/styles/global.css";
     }
 
     button{
+        margin-top: 1rem;
         align-self: center;
         padding: 1rem;
         border: 1px solid rgba(186, 55, 47, 0.5); 
         border-radius: 0.7rem;
 		background-color: #eee;
+        min-width: 50%;
+        font-size: 1.8rem;
+		font-family: 'lora', system-ui, sans-serif;
     }
 
     button:hover{
         background-color: rgba(186, 55, 47, 0.5); 
         color: #fff;
         border: 1px solid #000;
+    }
+
+    @media (min-width: 981px) {
+        .container{
+            max-width: 50%;
+        }
     }
 </style>
