@@ -9,6 +9,7 @@ import "../../public/styles/global.css";
 	<main>
         <div class="container">
             <h1>Contact</h1>
+            <p>Get in touch and let's see if we can work together!</p>
             <form class="form" name="contactForm" method="POST" data-netlify="true">
 
                 <label for="fname">First Name</label>
@@ -21,7 +22,7 @@ import "../../public/styles/global.css";
                 <input type="text" id="number" name="number" placeholder="Please use ten digit format 999-999-9999">
 
                 <label for="message">Subject</label>
-                <textarea id="message" name="message" placeholder="Your message here" required></textarea>
+                <textarea id="message" rows="6" name="message" placeholder="Your message here" required></textarea>
 
                 <button type="submit">Submit</button>
 
@@ -54,6 +55,10 @@ import "../../public/styles/global.css";
         font-weight: bold;
     }
 
+    p{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
     .form{
         display: flex;
         flex-direction: column;
