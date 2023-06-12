@@ -1,0 +1,24 @@
+---
+import image from "../../public/images/intro.jpg";
+---
+<div class="imgContainer">
+    <img src={image} alt="Jamil Sinno's personal photo">
+</div>
+
+<style>
+	.imgContainer {
+		min-width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0.7rem;
+		box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
+	}
+
+	.imgContainer img{
+		width: 100%;
+		max-height: 100%;
+		border-radius: 0.7rem;
+	}
+</style>

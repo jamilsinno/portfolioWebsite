@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro";
+import Image from "../components/Image.astro";
 import "../../public/styles/global.css";
-import image from "../../public/images/intro.jpg";
 ---
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
@@ -11,13 +11,11 @@ import image from "../../public/images/intro.jpg";
         <section>
             <h1>About Me</h1>
             <div class="container">
-                <div class="imgContainer">
-                    <img src={image} alt="Jamil Sinno's personal photo">
-                </div>
+                <Image />
                 <div class="pContainer">
                     <div class="titleContainer">
-                        <h3>Jamil Sinno</h3>
-                        <h4>Owner - Sinno Technologies.</h4>
+                        <h2>Jamil Sinno</h2>
+                        <h3>Owner - Sinno Technologies.</h4>
                     </div>
                     <p>I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
                     <p>I was born in Kuwait to Lebanese parents before immigrating to Halifax in 2004. Growing up as an immigrant in Canada came with a lot of challenges and opportunities that leave me well placed to advocate for and represent those with similar experiences. With my background in Chemical and Industrial Engineering from Dalhousie University and a passion for writing code, I plan on bringing my expertise into the tech world. I believe there is a place for everyone in tech, and that technology can improve many people's lives, specifically marginalized groups.</p>
@@ -30,25 +28,25 @@ import image from "../../public/images/intro.jpg";
 
 <style>
     main{
-        padding: 2rem 5rem;
+        padding: 1rem 3rem;
         display: flex;
         width:100%;
     }
 
     h1{
         font-size: 4rem;
-        padding: 0 0 1rem 0;
+        padding: 1rem;
         text-align: center;
         font-weight: bold;
     }
 
-    h3{
+    h2{
         font-size: 2.2rem; 
         font-weight: 700;
         padding: 1rem 0 0 1rem;
     }
 
-    h4{
+    h3{
         font-size: 2rem; 
         font-weight: 500;
         padding: 0 1rem;
@@ -67,24 +65,6 @@ import image from "../../public/images/intro.jpg";
         align-items: center;
         gap: 1rem;
     } 
-
-	.imgContainer {
-		padding: 1rem;
-		min-width: 50%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		border-radius: 0.7rem;
-        background-color: rgba(255, 255, 255, 0.75);
-        border: 1px solid rgba(186, 55, 47, 0.5); 
-	}
-
-	.imgContainer img{
-		width: 100%;
-		max-height: 100%;
-		border-radius: 0.7rem;
-	}
 
     .titleContainer{
         align-self: flex-start;
