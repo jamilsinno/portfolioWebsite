@@ -5,7 +5,7 @@
     line-height: 1.5;
 }
 html{
-    background-image: url('../images/backgroundLight.svg');
+    background-image: url('../backgroundLight.svg');
     background-size: cover;
     background-position: center;
     font-size: 62.5%;
