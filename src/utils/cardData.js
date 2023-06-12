@@ -19,7 +19,7 @@ const cardData = [
         title: "R.A.M.P. Atlantic Ltd.",
         body: "Business Website - Civil Engineering Firm. Designed in HTML, CSS & JS",
         img: "../../public/images/rampatl.png",
-        alt: "Unum Health Login Page",
+        alt: "RAMP Atlantic Home Page",
         href: "https://rampatlantic.netlify.app/index.html",
         repo: "No repository available",
     },
