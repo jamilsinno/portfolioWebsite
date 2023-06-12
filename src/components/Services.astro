@@ -6,39 +6,39 @@ import rocket from "../../public/icons/rocket.svg";
 ---
 
 <div class="mainContainer">
-    <h1>Is Your Web Presence Working For You?</h1>
+    <h1 class="title">Is Your Web Presence Working For You?</h1>
     <div class="container">
         <div class="textContainer">
             <p class="mainText">Is your website designed to captivate potential customers seeking the services you offer? Does it seamlessly adapt to any device, ensuring a flawless user experience? In today's digital landscape, having a responsive and accessible website is no longer a luxury—it's a necessity.</p>
             <p class="mainText">My mission is to deliver top-notch, responsive, and accessible websites to small businesses and individuals in our community. Whether you're in need of a brand-new website or a revamp to thrive in the mobile era, I'm here to assist you. I specialize in creating a virtual hub where interested parties can discover and engage with your unique offerings. How may I be of service to you today?</p>
         </div>
         <div class="features">
-            <section>
-                <img src={conversation} alt="a picture of two chat bubbles from either direction indicating a conversation.">
+            <section class="featureContainer">
+                <img class="image" src={conversation} alt="a picture of two chat bubbles from either direction indicating a conversation.">
                 <div class="content">
-                    <h2>1. Consultation</h2>
-                    <p>It starts with a conversation where we'll determine what your project is about.</p>
+                    <h2 class="topic">1. Consultation</h2>
+                    <p class="text">It starts with a conversation where we'll determine what your project is about.</p>
                 </div>
             </section>
-            <section>
-                <img src={proposal} alt="a picture of a pen and paper representing a proposal.">
+            <section class="featureContainer">
+                <img class="image" src={proposal} alt="a picture of a pen and paper representing a proposal.">
                 <div class="content">
-                    <h2>2. Proposal</h2>
-                    <p>A detailed project proposal will be presented, followed by an action plan.</p>
+                    <h2 class="topic">2. Proposal</h2>
+                    <p class="text">A detailed project proposal will be presented, followed by an action plan.</p>
                 </div>
             </section>
-            <section>
-                <img src={code} alt="a picture of a left carrat, forward slash and a right carrat.">
+            <section class="featureContainer">
+                <img class="image" src={code} alt="a picture of a left carrat, forward slash and a right carrat.">
                 <div class="content">
-                    <h2>3. Creation</h2>
-                    <p>Clients receive regular status updates as I work on and test the project.</p>
+                    <h2 class="topic">3. Creation</h2>
+                    <p class="text">Clients receive regular status updates as I work on and test the project.</p>
                 </div>
             </section>
-            <section>
-                <img src={rocket} alt="a picture of a rocket.">
+            <section class="featureContainer">
+                <img class="image" src={rocket} alt="a picture of a rocket.">
                 <div class="content">
-                    <h2>4. Launch</h2>
-                    <p>Your product comes to life with value added and peace of mind. </p>
+                    <h2 class="topic">4. Launch</h2>
+                    <p class="text">Your product comes to life with value added and peace of mind. </p>
                 </div>
             </section>
         </div>
@@ -89,19 +89,19 @@ import rocket from "../../public/icons/rocket.svg";
         gap: 1rem;
     }
 
-    h1{
+    .title{
         font-size: 4em;
         font-weight: bold;
         text-align: center;
         padding: 1.5rem;
     }
 
-    h2{
+    .topic{
         font-size: 2.6rem;
         font-weight: bold;
     }
 
-    section{
+    .featureContainer{
         width: 100%;
         max-height: 100%;
         padding: 1rem;
@@ -114,7 +114,7 @@ import rocket from "../../public/icons/rocket.svg";
         border-radius: 0.7rem;
     }
 
-    section p{
+    .featureContainer .text{
         font-size: 1.8rem;
     }
 
