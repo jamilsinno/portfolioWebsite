@@ -3,19 +3,19 @@ import image from "../../public/jamilSinnoBrush.svg";
 import resume from "../../public/JamilSinnoresume.pdf";
 ---
 
-<div>
-    <h4>
+<div class="container">
+    <h4 class="image">
         <img src={image} alt="Jamil Sinno's Hero image. The words are Jamil Sinno with a brush stroke in the back. The word Sinno is in between carats which is supposed to make it look like a component. The theme of the logo is an 8 bit design.">
     </h4>
-    <section>
-        <h1>I enjoy <a class="link" href="https://github.com/jamilsinno" target="_blank" rel="noreferrer noopener">writing code</a>, <a class="link" href="https://1drv.ms/x/s!AkPXqkA8Qy8miULhLB_qMRzfvRFB?e=VdvnT5" target="_blank" rel="noreferrer noopener">lifting weights</a>, and <a class="link" href="https://linktr.ee/sinnotech" target="_blank" rel="noreferrer noopener">creating content</a>.</h1>
-        <p class="container">I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
+    <section class="txtContainer">
+        <h1 class="mainTxt">I enjoy <a class="link" href="https://github.com/jamilsinno" target="_blank" rel="noreferrer noopener">writing code</a>, <a class="link" href="https://1drv.ms/x/s!AkPXqkA8Qy8miULhLB_qMRzfvRFB?e=VdvnT5" target="_blank" rel="noreferrer noopener">lifting weights</a>, and <a class="link" href="https://linktr.ee/sinnotech" target="_blank" rel="noreferrer noopener">creating content</a>.</h1>
+        <p class="pContainer">I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
         <a id="resume" href={resume} target="_blank">My Resume</a>
     </section>
 </div>
 
 <style>
-    div{
+    .container{
         width: auto;
         display: flex;
         flex-direction: column;
@@ -23,19 +23,19 @@ import resume from "../../public/JamilSinnoresume.pdf";
         align-items: center;
     }
 
-    h4 img{
+    .image img{
         width: 100%;
         max-height: 100%;
     }
 
-    section{
+    .txtContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-	.container {
+	.pContainer {
 		margin: 1rem 0;
         border: 1px solid rgba(186, 55, 47, 0.5); 
 		background-color: rgba(255, 255, 255, 0.75);
@@ -46,7 +46,7 @@ import resume from "../../public/JamilSinnoresume.pdf";
     #resume{
 		background-color: rgba(255, 255, 255, 0.75);
         padding: 1rem;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         border: 1px solid rgba(186, 55, 47, 0.5); 
         border-radius: 0.7em;
     }
@@ -61,14 +61,14 @@ import resume from "../../public/JamilSinnoresume.pdf";
         transform: scale(0.9);
     }
 
-    h1{
-        font-size: 3rem;
+    .mainTxt{
+        font-size: 3em;
         font-weight: bold;
         text-align: center;
         padding: 0.5rem 0;
     }
 
-    section p {
+    .txtContainer p {
         font-size: 2.0rem;
     }
 
