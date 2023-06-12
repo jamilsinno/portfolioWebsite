@@ -8,19 +8,19 @@ import "../styles/global.css";
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
-	<main>
+	<main class="mainContainer">
         <section>
-            <h1>About Me</h1>
+            <h1 class="about">About Me</h1>
             <div class="container">
                 <Image />
                 <div class="pContainer">
                     <div class="titleContainer">
-                        <h2>Jamil Sinno</h2>
-                        <h3>Owner - Sinno Technologies.</h4>
+                        <h2 class="name">Jamil Sinno</h2>
+                        <h3 class="title">Owner - Sinno Technologies.</h4>
                     </div>
-                    <p>I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
-                    <p>I was born in Kuwait to Lebanese parents before immigrating to Halifax in 2004. Growing up as an immigrant in Canada came with a lot of challenges and opportunities that leave me well placed to advocate for and represent those with similar experiences. With my background in Chemical and Industrial Engineering from Dalhousie University and a passion for writing code, I plan on bringing my expertise into the tech world. I believe there is a place for everyone in tech, and that technology can improve many people's lives, specifically marginalized groups.</p>
-                    <p>When I'm not coding I'm usually learning to play the drums or the keyboard, lifting, cooking, reading, or posting about my experiences. I have two cats, Ed and Al. I post pictures of them frequently on my <a class="link" href="https://twitter.com/JamilSinno" target="_blank" rel="noreferrer noopener">Twitter</a>.</p>
+                    <p class="text">I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
+                    <p class="text">I was born in Kuwait to Lebanese parents before immigrating to Halifax in 2004. Growing up as an immigrant in Canada came with a lot of challenges and opportunities that leave me well placed to advocate for and represent those with similar experiences. With my background in Chemical and Industrial Engineering from Dalhousie University and a passion for writing code, I plan on bringing my expertise into the tech world. I believe there is a place for everyone in tech, and that technology can improve many people's lives, specifically marginalized groups.</p>
+                    <p class="text">When I'm not coding I'm usually learning to play the drums or the keyboard, lifting, cooking, reading, or posting about my experiences. I have two cats, Ed and Al. I post pictures of them frequently on my <a class="link" href="https://twitter.com/JamilSinno" target="_blank" rel="noreferrer noopener">Twitter</a>.</p>
                 </div>
             </div>
         </section>
@@ -28,32 +28,32 @@ import "../styles/global.css";
 </Layout>
 
 <style>
-    main{
+    .mainContainer{
         padding: 1rem 3rem;
         display: flex;
         width:100%;
     }
 
-    h1{
+    .about{
         font-size: 4rem;
         padding: 1rem;
         text-align: center;
         font-weight: bold;
     }
 
-    h2{
+    .name{
         font-size: 2.2rem; 
         font-weight: 700;
         padding: 1rem 0 0 1rem;
     }
 
-    h3{
+    .title{
         font-size: 2rem; 
         font-weight: 500;
         padding: 0 1rem;
     }
 
-    p{
+    .text{
         font-size: 1.8rem;
         padding: 1rem;
         border-radius: 0.7rem;

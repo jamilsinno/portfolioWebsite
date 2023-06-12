@@ -1,31 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro";
-import "../styles/global.css";
 import "../styles/reset.css";
+import "../styles/global.css";
 ---
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
-	<main>
-        <section class="container">
-            <h1>Contact Me</h1>
-            <p>Get in touch and let's see if we can work together!</p>
+	<main class="container">
+        <section class="sectionContainer">
+            <h1 class="contact">Contact Me</h1>
+            <p class="text">Get in touch and let's see if we can work together!</p>
             <form class="form" name="contactForm" method="POST" data-netlify="true">
 
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+                <label class="label" for="fname">First Name</label>
+                <input class="input" type="text" id="fname" name="firstname" placeholder="Your first name" required>
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+                <label class="label" for="lname">Last Name</label>
+                <input class="input" type="text" id="lname" name="lastname" placeholder="Your last name" required>
 
-                <label for="number">Number</label>
-                <input type="text" id="number" name="number" placeholder="Please use ten digit format 999-999-9999">
+                <label class="label" for="number">Number</label>
+                <input class="input" type="text" id="number" name="number" placeholder="Please use ten digit format 999-999-9999">
 
-                <label for="message">Subject</label>
+                <label class="label" for="message">Subject</label>
                 <textarea id="message" rows="6" name="message" placeholder="Your message here" required></textarea>
 
-                <button type="submit">Submit</button>
+                <button class="submit" type="submit">Submit</button>
 
             </form>
         </section>
@@ -33,30 +33,30 @@ import "../styles/reset.css";
 </Layout>
 
 <style>
-    main{
+    .container{
         padding: 5rem;
-        display: flex;
         width:100%;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .container{
-		border: 1px solid rgba(var(--accent), 25%);
+    .sectionContainer{
+        border: 1px solid rgba(186, 55, 47, 0.5); 
 		background-color: rgba(255, 255, 255, 0.75);
 		padding: 1rem;
 		border-radius: 0.7rem;
         width: 100%;
     }
 
-    h1{
+    .contact{
         font-size: 4rem;
         padding: 1rem;
         text-align: center;
         font-weight: bold;
     }
 
-    p{
+    .text{
         font-size: 1.8rem;
         padding: 1rem;
     }
@@ -69,26 +69,25 @@ import "../styles/reset.css";
         padding: 1rem;
     }
 
-    label{
+    .label{
         font-size: 1.8rem;
         font-weight: 500;
     }
 
-    textarea{
+    #message{
         resize: none;
     }
 
-    input,
-    textarea{
+    .input,
+    #message{
         width: 100%;
         padding: 1rem;
 		background-color: #eee;
         border: 1px solid rgba(186, 55, 47, 0.5); 
         border-radius: 0.7rem;
-		font-family: 'lora', system-ui, sans-serif;
     }
 
-    button{
+    .submit{
         margin-top: 1rem;
         align-self: center;
         padding: 1rem;
@@ -97,17 +96,16 @@ import "../styles/reset.css";
 		background-color: #eee;
         min-width: 50%;
         font-size: 1.8rem;
-		font-family: 'lora', system-ui, sans-serif;
     }
 
-    button:hover{
+    .submit:hover{
         background-color: rgba(186, 55, 47, 0.5); 
         color: #fff;
         border: 1px solid #000;
     }
 
     @media (min-width: 981px) {
-        .container{
+        .sectionContainer{
             max-width: 50%;
         }
     }

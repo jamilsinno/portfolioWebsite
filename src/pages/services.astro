@@ -9,14 +9,14 @@ import "../styles/global.css";
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
-    <main>
+	<main class="container">
         <ServicesPage />
 		<Projects />
     </main>
 </Layout>
 
 <style>
-	main {
+	.container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -25,7 +25,7 @@ import "../styles/global.css";
 	}
 
 	@media screen and (max-width: 1080px){
-		main{
+		.container{
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
