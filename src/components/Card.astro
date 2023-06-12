@@ -12,21 +12,22 @@ const { href, title, body, img, repo, alt } = Astro.props;
 ---
 
 <li class="link-card">
-	<a href={href}>
-		<img src={img} alt={alt}>
-		<h2>
+	<a class="pLink" href={href}>
+		<img class="image" src={img} alt={alt}>
+		<h2 class="title">
 			{title}
 		</h2>
-		<p>
+		<p class="text">
 			{body}
 		</p>
-		<span>{repo}</span>
 	</a>
 </li>
 <style>
 	.link-card {
 		list-style: none;
 		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		padding: 0.25rem;
 		background-color: white;
 		background-image: none;
@@ -37,7 +38,8 @@ const { href, title, body, img, repo, alt } = Astro.props;
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 	}
 
-	.link-card > a {
+	.link-card > .pLink,
+	.link-card .rLink {
 		width: 100%;
 		text-decoration: none;
 		line-height: 1.4;
@@ -47,27 +49,28 @@ const { href, title, body, img, repo, alt } = Astro.props;
 		background-color: white;
 		opacity: 0.8;
 	}
-	img{
+	.image{
 		width:100%;
 		max-height: 100%;
 	}
-	h2 {
+	.title {
 		font-size: 1.5rem;
 		font-weight: bold;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		padding: 0.5rem 0;
 	}
-	p{
+	.text{
 		padding: 0 0 1rem 0;
 	}
-	span{
+	.rLink{
 		font-size: 1.5rem;
+		font-weight: 500;
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
 		background-image: var(--accent-gradient);
 	}
-	.link-card:is(:hover, :focus-within) h2 {
+	.link-card:is(:hover, :focus-within) h2{
 		color: rgb(var(--accent));
 	}
 </style>
