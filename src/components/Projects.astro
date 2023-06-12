@@ -4,7 +4,7 @@ import Card from "./Card.astro";
 ---
 
 <section class="container">
-    <h3>Projects</h3>
+    <h3 class="projects">Projects</h3>
     <ul class="cardContainer">
         <Card 
             title={cardData[0].title} 
@@ -40,14 +40,14 @@ import Card from "./Card.astro";
         flex-direction: column;
         justify-content: center;
     }
-    section,
-    ul{
+    .container,
+    .cardContainer{
         width: 100%;
         height: auto;
         padding: 1rem;
     }
 
-    h3{
+    .projects{
         font-size: 3.5rem;
         padding: 1rem;
         font-weight: bold;
