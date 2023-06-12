@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro";
+import "../../public/styles/global.css";
+import image from "../../public/images/intro.jpg";
+---
+
+<Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
+	<Header />
+	<main>
+        <section>
+            <h1>About Me</h1>
+            <div class="container">
+                <div class="imgContainer">
+                    <img src={image} alt="Jamil Sinno's personal photo">
+                </div>
+                <div class="pContainer">
+                    <div class="titleContainer">
+                        <h3>Jamil Sinno</h3>
+                        <h4>Owner - Sinno Technologies.</h4>
+                    </div>
+                    <p>I am a Full-Stack Software Developer specializing in the MERN stack. My career vision is to educate, and advocate for accessibility and representation in tech.</p>
+                    <p>I was born in Kuwait to Lebanese parents before immigrating to Halifax in 2004. Growing up as an immigrant in Canada came with a lot of challenges and opportunities that leave me well placed to advocate for and represent those with similar experiences. With my background in Chemical and Industrial Engineering from Dalhousie University and a passion for writing code, I plan on bringing my expertise into the tech world. I believe there is a place for everyone in tech, and that technology can improve many people's lives, specifically marginalized groups.</p>
+                    <p>When I'm not coding I'm usually learning to play the drums or the keyboard, lifting, cooking, reading, or posting about my experiences. I have two cats, Ed and Al. I post pictures of them frequently on my <a class="link" href="https://twitter.com/JamilSinno" target="_blank" rel="noreferrer noopener">Twitter</a>.</p>
+                </div>
+            </div>
+        </section>
+	</main>
+</Layout>
+
+<style>
+    main{
+        padding: 2rem 5rem;
+        display: flex;
+        width:100%;
+    }
+
+    h1{
+        font-size: 4rem;
+        padding: 0 0 1rem 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    h3{
+        font-size: 2.2rem; 
+        font-weight: 700;
+        padding: 1rem 0 0 1rem;
+    }
+
+    h4{
+        font-size: 2rem; 
+        font-weight: 500;
+        padding: 0 1rem;
+    }
+
+    p{
+        font-size: 1.8rem;
+        padding: 1rem;
+        border-radius: 0.7rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    } 
+
+	.imgContainer {
+		padding: 1rem;
+		min-width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0.7rem;
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(186, 55, 47, 0.5); 
+	}
+
+	.imgContainer img{
+		width: 100%;
+		max-height: 100%;
+		border-radius: 0.7rem;
+	}
+
+    .titleContainer{
+        align-self: flex-start;
+    }
+
+    .pContainer {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(186, 55, 47, 0.5); 
+		border-radius: 0.7rem;
+    }
+
+    .link{
+        color: #ba372f;
+        text-decoration: underline;
+    }
+
+	@media screen and (max-width: 1080px){
+		.container{
+			flex-direction: column;
+			justify-content: center;
+			align-items: stretch;
+		}
+	}
+</style>
