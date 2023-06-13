@@ -7,7 +7,7 @@
 }
 
 html{
-    background-image: url('../backgroundLight.svg');
+    background-image: url('/images/backgroundLight.svg');
     background-size: cover;
     background-position: center;
     font-size: 62.5%;
