@@ -1,23 +1,23 @@
 const cardData = [
     {
         title: "UNUM Health",
-        body: "Start up - Full Stack Application built with React, PHP, and PostgreSQL in Docker environment. Contract complete.",
+        body: "Start-up - Application Full Stack développée avec React, PHP et PostgreSQL dans un environnement Docker. Contrat terminé.",
         img: "/images/unumHealth.png",
-        alt: "Unum Health Login Page",
+        alt: "Page de connexion de Unum Health",
         href: "/services",
     },
     {
         title: "No Game Left Behind",
-        body: "Designed in HTML, CSS, JavaScript, EJS, Node.js, Express, Passport.js, Tailwind CSS, Daisy UI, MongoDB",
+        body: "Conçu en HTML, CSS, JavaScript, EJS, Node.js, Express, Passport.js, Tailwind CSS, Daisy UI et MongoDB.",
         img: "/images/Login.png",
-        alt: "Front page of No Game Left Behind",
+        alt: "Page principale de No Game Left Behind",
         href: "/services",
     },
     {
         title: "R.A.M.P. Atlantic Ltd.",
-        body: "Business Website - Civil Engineering Firm. Designed in HTML, CSS & JS",
+        body: "Site Web d'entreprise - Cabinet de génie civil. Conçu en HTML, CSS et JS.",
         img: "/images/rampatl.png",
-        alt: "RAMP Atlantic Home Page",
+        alt: "RAMP Atlantic page d'accueil",
         href: "https://rampatlantic.netlify.app/index.html",
     },
 ]
