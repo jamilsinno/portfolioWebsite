@@ -10,8 +10,12 @@ import "../styles/global.css";
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
 	<main class="container">
-		<Hero />
-		<Image />
+		<div>
+			<Hero />
+		</div>
+		<div>
+			<Image />
+		</div>
 	</main>
 </Layout>
 
@@ -32,4 +36,10 @@ import "../styles/global.css";
 			align-items: center;
 		}
 	}
+	
+	@media (min-width: 981px){
+		.container > *{
+			max-width: 50%;
+		}
+	})
 </style>
