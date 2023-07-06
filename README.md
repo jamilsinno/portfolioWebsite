@@ -14,3 +14,7 @@ A website to display my work and tell people about my services.
 
 ## Optimizations
 I regularly come back and update the website and it's content.
+
+## Contributors
+- [CodeCrusader80](https://github.com/CodeCrusader80) French translation
+- [Neuroleptique](https://github.com/Neuroleptique) French translation
