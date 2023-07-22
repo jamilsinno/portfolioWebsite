@@ -43,6 +43,9 @@ import rocket from "../../public/icons/rocket.svg";
                     </div>
                 </section>
         </section>
+        <div class="btnContainer">
+            <a href="https://calendly.com/sinno-technologies/free-consult" target="_blank" rel="noreferrer noopener" id="consult">Book a Free Consult</a>
+        </div>
     </div>
 </div>
 
@@ -139,6 +142,35 @@ import rocket from "../../public/icons/rocket.svg";
         max-height: 100%;
         padding: 1rem 0;
         align-self: flex-start;
+    }
+
+    .btnContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #consult{
+		background-color: rgba(255, 255, 255, 0.75);
+        padding: 1rem;
+        font-size: 1.8rem;
+        border: 1px solid rgba(186, 55, 47, 0.5); 
+        border-radius: 0.7em;
+    }
+
+    #consult:hover {
+        background-color: rgba(186, 55, 47, 0.5); 
+        color: #fff;
+        border: 1px solid #000;
+    }
+
+    #consult:active{
+        transform: scale(0.9);
     }
     
 	@media screen and (max-width: 1080px){
