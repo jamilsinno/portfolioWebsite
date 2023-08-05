@@ -11,7 +11,7 @@ import "../styles/global.css";
         <section class="sectionContainer">
             <h1 class="contact">Contact Me</h1>
             <p class="text">Get in touch and let's see if we can work together!</p>
-            <form class="form" name="contactForm" method="POST" data-netlify="true">
+            <form class="form" name="contactForm" method="POST" data-netlify="true" onsubmit="submitForm(event)">
 
                 <label class="label" for="fname">First Name</label>
                 <input class="input" type="text" id="fname" name="firstname" placeholder="Your first name" required>
@@ -34,6 +34,34 @@ import "../styles/global.css";
             </form>
         </section>
 	</main>
+    <script>
+        async function submitForm(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const recaptchaToken = await grecaptcha.execute('6Lf0jn4nAAAAADlqxgl4AzUX_VagKmRc9btEg4tq');
+            formData.append('recaptchaToken', recaptchaToken);
+        
+            try {
+            const response = await fetch('/.netlify/functions/submitForm', {
+                method: 'POST',
+                body: JSON.stringify(Object.fromEntries(formData)),
+                headers: { 'Content-Type': 'application/json' },
+            });
+        
+            if (response.ok) {
+                alert('Form submitted successfully!');
+                form.reset();
+            } else {
+                const data = await response.json();
+                alert(data.message);
+            }
+            } catch (error) {
+            alert('An error occurred while submitting the form.');
+            console.error(error);
+            }
+        }
+    </script>
 </Layout>
 
 <style>
