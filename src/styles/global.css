@@ -6,6 +6,10 @@
     font-family: 'IBM Plex Sans';
 }
 
+.clearfix {
+    overflow: auto;
+}
+
 html{
     background-image: url('/images/backgroundLight.svg');
     background-size: cover;
@@ -35,4 +39,41 @@ a{
 p{
     text-align: justify;
     font-size: 1.5rem;
+}
+
+/* Carousel */
+
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+    border: 1px solid rgba(186, 55, 47, 0.5); 
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 0.7rem;
+}
+
+.review h4{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.reviewInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+    gap: 1rem;
+}
+
+.reviewInfo span{
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 1rem 0; 
 }

@@ -10,23 +10,41 @@ import "../styles/global.css";
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
-	<main>
+	<main class="main">
 		<section class="container">
-			<div class="container">
+			<div>
 				<Hero />
 			</div>
 			<div>
 				<Image />
 			</div>
 		</section>
-		<GoogleReviews client:load/>
+		<section class="reviewContainer">
+			<h3>Reviews</h3>
+			<div>
+				<GoogleReviews client:load/>
+			</div>
+		</section>
 	</main>
 </Layout>
 
 <style>
+	.main {
+		width: 100%;
+		height: auto;
+	}
 	.container {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 3rem;
+		gap: 1rem;
+	}
+
+	.reviewContainer {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 1rem 3rem;

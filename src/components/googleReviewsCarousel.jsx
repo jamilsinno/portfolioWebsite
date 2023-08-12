@@ -9,17 +9,17 @@ const GoogleReviews = () => {
             ariaLabel="Reviews"
             centerMode
             centerSlidePercentage={100}
-            dynamicHeight
             showArrows={true} 
+            showStatus={false}
             swipeable={true}
             useKeyboardArrows={true}
         >
             {reviews.map((review, index) => (
-                <section key={index}>
-                    <h4>{review.body}</h4>
-                    <div>
-                        <span>{review.author}</span>
+                <section class="review" key={index}>
+                    <h4>"{review.body}"</h4>
+                    <div class="reviewInfo">
                         <span>{review.stars}</span>
+                        <span>- {review.author}</span>
                     </div>
                 </section>
             ))}
