@@ -3,26 +3,48 @@ import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Image from "../components/Image.astro";
+import GoogleReviews from "../components/googleReviewsCarousel.jsx";
 import "../styles/reset.css";
 import "../styles/global.css";
 ---
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
-	<main class="container">
-		<div>
-			<Hero />
-		</div>
-		<div>
-			<Image />
-		</div>
+	<main class="main">
+		<section class="container">
+			<div>
+				<Hero />
+			</div>
+			<div>
+				<Image />
+			</div>
+		</section>
+		<section class="reviewContainer">
+			<h3 class="reviewTitle">Reviews</h3>
+			<div>
+				<GoogleReviews client:load/>
+			</div>
+		</section>
 	</main>
 </Layout>
 
 <style>
+	.main {
+		width: 100%;
+		height: auto;
+	}
 	.container {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 3rem;
+		gap: 1rem;
+	}
+
+	.reviewContainer {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 1rem 3rem;
