@@ -3,19 +3,22 @@ import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Image from "../components/Image.astro";
+import GoogleReviews from "../components/googleReviewsCarousel.jsx";
 import "../styles/reset.css";
 import "../styles/global.css";
 ---
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
 	<Header />
-	<main class="container">
-		<div>
-			<Hero />
-		</div>
-		<div>
-			<Image />
-		</div>
+	<main>
+		<section class="container">
+			<div class="container">
+				<Hero />
+			</div>
+			<div>
+				<Image />
+			</div>
+		</section>
 	</main>
 </Layout>
 
