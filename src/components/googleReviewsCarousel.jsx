@@ -7,8 +7,7 @@ const GoogleReviews = () => {
     return (
         <Carousel
             ariaLabel="Reviews"
-            centerMode
-            centerSlidePercentage={100}
+            emulateTouch={true}
             showArrows={true} 
             showStatus={false}
             swipeable={true}

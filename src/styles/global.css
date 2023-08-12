@@ -61,19 +61,21 @@ p{
     font-size: 2rem;
 }
 
+.reviewTitle{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
 .reviewInfo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     height: auto;
     text-align: center;
-    gap: 1rem;
+    padding: 1rem;
 }
 
 .reviewInfo span{
     font-style: italic;
     font-size: 1.5rem;
-    padding: 1rem 0; 
 }
