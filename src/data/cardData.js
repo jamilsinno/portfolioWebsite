@@ -1,5 +1,12 @@
 const cardData = [
     {
+        title: "Parkland Property Management",
+        body: "Local Business - Static website designed to customer specification using Astro.js and Vanilla CSS.",
+        img: "/images/ParklandPM.png",
+        alt: "Parkland Property Management Home Page",
+        href: "/services",
+    },
+    {
         title: "UNUM Health",
         body: "Start up - Full Stack Application built with React, PHP, and PostgreSQL in Docker environment. Contract complete.",
         img: "/images/unumHealth.png",

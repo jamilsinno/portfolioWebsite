@@ -6,27 +6,16 @@ import Card from "./Card.astro";
 <section class="container">
     <h3 class="projects">Projects</h3>
     <ul class="cardContainer">
-        <Card 
-            title={cardData[0].title} 
-            body={cardData[0].body} 
-            img={cardData[0].img} 
-            href={cardData[0].href} 
-            alt={cardData[0].alt}
-        />
-        <Card 
-            title={cardData[1].title} 
-            body={cardData[1].body} 
-            img={cardData[1].img} 
-            href={cardData[1].href} 
-            alt={cardData[1].alt}
-        />
-        <Card 
-            title={cardData[2].title} 
-            body={cardData[2].body} 
-            img={cardData[2].img} 
-            href={cardData[2].href} 
-            alt={cardData[2].alt}
-        />
+        {cardData.map((card, index) => (
+            <Card
+              key={index}
+              title={card.title}
+              body={card.body}
+              img={card.img}
+              href={card.href}
+              alt={card.alt}
+            />
+          ))}
     </ul>
     <a href="https://github.com/jamilsinno?tab=repositories" target="_blank" rel="noreferrer noopener" class="github">View more of my projects on GitHub</a>
 </section>
