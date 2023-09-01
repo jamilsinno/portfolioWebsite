@@ -1,11 +1,11 @@
 ---
+import GoogleReviews from "../components/googleReviewsCarousel.jsx";
+import "../styles/reset.css";
+import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Image from "../components/Image.astro";
-import GoogleReviews from "../components/googleReviewsCarousel.jsx";
-import "../styles/reset.css";
-import "../styles/global.css";
 ---
 
 <Layout title="Sinno Technologies - Jamil Sinno's Portfolio">
@@ -21,9 +21,7 @@ import "../styles/global.css";
 		</section>
 		<section class="reviewContainer">
 			<h3 class="reviewTitle">Reviews</h3>
-			<div>
-				<GoogleReviews client:load/>
-			</div>
+			<GoogleReviews client:load/>
 		</section>
 	</main>
 </Layout>
@@ -47,6 +45,7 @@ import "../styles/global.css";
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 100%;
 		padding: 1rem 3rem;
 		gap: 1rem;
 	}
