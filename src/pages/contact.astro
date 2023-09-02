@@ -19,6 +19,9 @@ import "../styles/global.css";
                 <label class="label" for="lname">Last Name</label>
                 <input class="input" type="text" id="lname" name="lastname" placeholder="Your last name" required>
 
+                <label class="label" for="email">Email Address</label>
+                <input class="input" type="email" id="email" name="email" placeholder="Your email address" required>
+
                 <label class="label" for="number">Number</label>
                 <input class="input" type="text" id="number" name="number" placeholder="Please use ten digit format 999-999-9999">
 
@@ -76,6 +79,11 @@ import "../styles/global.css";
 
     #message{
         resize: none;
+    }
+
+    .g-recaptcha{
+        align-self: center;
+        transform: scale(0.7);
     }
 
     .input,
