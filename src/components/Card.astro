@@ -12,7 +12,7 @@ const { href, title, body, img, alt } = Astro.props;
 ---
 
 <li class="link-card">
-	<a class="pLink" href={href}>
+	<a class="pLink" href={href} target="_blank" rel="noreferrer noopener">
 		<img class="image" src={img} alt={alt}>
 		<section>
 			<h2 class="title">
