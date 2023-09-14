@@ -1,5 +1,6 @@
 ---
 export interface Props {
+		key: number,
         title: string,
         body: string,
         img: string,
@@ -11,14 +12,16 @@ const { href, title, body, img, alt } = Astro.props;
 ---
 
 <li class="link-card">
-	<a class="pLink" href={href}>
+	<a class="pLink" href={href} target="_blank" rel="noreferrer noopener">
 		<img class="image" src={img} alt={alt}>
-		<h2 class="title">
-			{title}
-		</h2>
-		<p class="text">
-			{body}
-		</p>
+		<section>
+			<h2 class="title">
+				{title}
+			</h2>
+			<p class="text">
+				{body}
+			</p>
+		</section>
 	</a>
 </li>
 <style>
@@ -41,6 +44,10 @@ const { href, title, body, img, alt } = Astro.props;
 	.link-card > .pLink,
 	.link-card .rLink {
 		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		text-decoration: none;
 		line-height: 1.4;
 		padding: 1rem 1.3rem;

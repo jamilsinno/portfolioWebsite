@@ -1,5 +1,10 @@
 const reviews = [
     {
+        author: "Maged Aly",
+        stars: "5 stars",
+        body: "Thank you Sinno Technologies for creating my website. I was looking for a minimalistic design, and they delivered exactly what I was looking for in a record time. Jamil is very personable, and will work with you until you are satisfied. Definitely recommended."
+    },
+    {
         author: "Cristian Matos Richards",
         stars: "5 stars",
         body: "I've teamed up with Jamil on multiple occasions, and I've gotta say, his knack for understanding exactly what a project needs is just the start to why its great to work with them.",
