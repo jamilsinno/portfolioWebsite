@@ -15,11 +15,11 @@ const GoogleReviews = () => {
         >
             {reviews.map((review, index) => (
                 <section class="review" key={index}>
-                    <h4>"{review.body}"</h4>
-                    <div class="reviewInfo">
+                    <h3>"{review.body}"</h3>
+                    <section class="reviewInfo">
                         <span>{review.stars}</span>
                         <span>- {review.author}</span>
-                    </div>
+                    </section>
                 </section>
             ))}
         </Carousel>

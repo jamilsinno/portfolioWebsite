@@ -6,6 +6,13 @@
     font-family: 'IBM Plex Sans';
 }
 
+*:focus,
+a:focus{
+    outline: 2px solid blue;
+    outline-offset: 2px;
+    border-radius: 0.7rem;
+}
+
 .clearfix {
     overflow: auto;
 }
@@ -57,7 +64,7 @@ p{
     border-radius: 0.7rem;
 }
 
-.review h4{
+.review h3{
     padding: 1rem;
     font-size: 2rem;
 }

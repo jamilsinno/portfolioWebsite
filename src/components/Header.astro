@@ -3,13 +3,11 @@ import Navigation from './Navigation.astro';
 import Logo from './Logo.astro';
 ---
 <header>
- <nav class="navBar">
+ <nav class="navBar" aria-label="Main Navigation">
     <a href="/" class="logo">
         <Logo />
     </a>
-    <div>
-        <Navigation />
-    </div>
+    <Navigation />
  </nav>
 </header>
 
@@ -28,12 +26,6 @@ import Logo from './Logo.astro';
         padding: 1.5rem 3rem;
     }
     
-    .logo{
-        width: 15%;
-        max-height: 100%;
-        padding: 1rem;
-    }
-
     @media screen and (max-width: 960px) {
         .navBar{
             flex-direction: column;

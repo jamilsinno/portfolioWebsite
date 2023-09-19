@@ -1,23 +1,20 @@
 ---
-import image from "../../public/images/intro.webp";
+import image from "/images/intro.webp";
 ---
-<div class="imgContainer">
-    <img src={image} alt="Jamil Sinno's personal photo">
-</div>
+<img src={image} alt="Jamil Sinno's personal photo">
 
 <style>
-	.imgContainer {
-		min-width: 50%;
-		display: flex;
-		flex-direction: row;
-		border-radius: 0.7rem;
-		box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-	}
-
-	.imgContainer img{
-		width: 100%;
+	img{
+		width: 50%;
 		max-height: 100%;
 		border-radius: 0.7rem;
 		align-self: flex-start;
+		box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.25);
+	}
+
+	@media screen and (max-width: 1080px){
+		img{
+			width: 100%;
+		}
 	}
 </style>

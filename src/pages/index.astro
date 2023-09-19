@@ -12,15 +12,11 @@ import Image from "../components/Image.astro";
 	<Header />
 	<main class="main">
 		<section class="container">
-			<div>
-				<Hero />
-			</div>
-			<div>
-				<Image />
-			</div>
+			<Hero />
+			<Image />
 		</section>
 		<section class="reviewContainer">
-			<h3 class="reviewTitle">Reviews</h3>
+			<h2 class="reviewTitle">Reviews</h2>
 			<GoogleReviews client:load/>
 		</section>
 	</main>
@@ -38,6 +34,9 @@ import Image from "../components/Image.astro";
 		align-items: center;
 		padding: 1rem 3rem;
 		gap: 1rem;
+	}
+	.container *{
+		max-width: 50%;
 	}
 
 	.reviewContainer {
